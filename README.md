@@ -1,6 +1,4 @@
-# Tattletale
-
-=======
+# Tattletale - IN PROGRESS
 
 ## Audits activerecord models like a boss
 
