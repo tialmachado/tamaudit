@@ -11,3 +11,4 @@ spec/dummy/.sass-cache
 config/gemnasium.yml
 
 /.idea/
+/.RUBY_VERSION

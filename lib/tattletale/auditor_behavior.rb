@@ -87,7 +87,11 @@ module Tattletale
     end
 
     def write_audit(options)
-      self.audits.create(options) unless audited_hash.blank?
+      if options[:action] == 'destroy'
+        self.audits.create(options)
+      else
+        self.audits.create(options) unless audited_hash.blank?
+      end
     end
 
   end

@@ -8,7 +8,6 @@ class CreateAuditableAudits < ActiveRecord::Migration
       t.integer :version
       t.string :action
       t.string :remote_address
-
       t.timestamps
     end
   end

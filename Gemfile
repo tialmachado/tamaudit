@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Declare your gem's dependencies in tattletale.gemspec.
+# Declare your gem's dependencies in espinita.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
@@ -11,5 +11,7 @@ gemspec
 # your gem to rubygems.org.
 
 # To use debugger
-# gem 'debugger'
+#gem 'debugger'
+gem "pry"
 
+gem 'coveralls', require: false
