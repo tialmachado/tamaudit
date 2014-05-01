@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "espinita/version"
+require "tattletale/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "espinita"
-  s.version     = Espinita::VERSION
-  s.authors     = ["Miguel Michelson"]
-  s.email       = ["miguelmichelson@gmail.com"]
-  s.homepage    = "http://github.com/continuum/espinita"
+  s.name        = "tattletale"
+  s.version     = Tattletale::VERSION
+  s.authors     = ["Tiago Machado"]
+  s.email       = ["tiago@tamworks.com"]
+  s.homepage    = "http://github.com/tiagotam/tattletale"
   s.summary     = "Auditable Rails Engine."
   s.description = "Audit activerecord models like a boss"
 

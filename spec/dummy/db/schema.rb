@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20131030014901) do
 
-  create_table "espinita_audits", force: true do |t|
+  create_table "audits", force: true do |t|
     t.integer  "auditable_id"
     t.string   "auditable_type"
     t.integer  "user_id"
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20131030014901) do
     t.datetime "updated_at"
   end
 
-  add_index "espinita_audits", ["auditable_id", "auditable_type"], name: "index_espinita_audits_on_auditable_id_and_auditable_type"
-  add_index "espinita_audits", ["user_id", "user_type"], name: "index_espinita_audits_on_user_id_and_user_type"
+  add_index "audits", ["auditable_id", "auditable_type"], name: "index_audits_on_auditable_id_and_auditable_type"
+  add_index "audits", ["user_id", "user_type"], name: "index_audits_on_user_id_and_user_type"
 
   create_table "general_models", force: true do |t|
     t.integer  "user_id"

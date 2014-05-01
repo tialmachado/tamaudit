@@ -1,2 +1,2 @@
-Espinita::Engine.routes.draw do
+Tattletale::Engine.routes.draw do
 end

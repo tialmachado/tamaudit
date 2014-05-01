@@ -1,7 +1,7 @@
-module Espinita
+module Tattletale
   module Auditor 
     extend ActiveSupport::Concern
-    include Espinita::AuditorBehavior
+    include Tattletale::AuditorBehavior
   end
 end
 

@@ -1,4 +1,4 @@
 class GeneralModel < ActiveRecord::Base
   belongs_to :user
-  include Espinita::Auditor
+  include Tattletale::Auditor
 end

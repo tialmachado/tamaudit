@@ -1,6 +1,6 @@
-module Espinita
+module Tattletale
   class Engine < ::Rails::Engine
-    isolate_namespace Espinita
+    isolate_namespace Tattletale
     
     config.generators do |g|
       g.test_framework  :rspec,
@@ -10,8 +10,8 @@ module Espinita
     end
 
     initializer "include Auditor request into action controller" do |app|
-      ActionController::Base.send(:include, Espinita::AuditorRequest)
-      ActiveRecord::Base.send(:include, Espinita::Auditor)
+      ActionController::Base.send(:include, Tattletale::AuditorRequest)
+      ActiveRecord::Base.send(:include, Tattletale::Auditor)
     end
 
 

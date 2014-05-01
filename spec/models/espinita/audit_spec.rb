@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module Espinita
+module Tattletale
   describe Audit do
     it{ should belong_to(:auditable) }
     it{ should belong_to(:user)}
