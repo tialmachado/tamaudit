@@ -6,7 +6,7 @@ require "tamaudit/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "tamaudit"
-  s.version     = TamAudit::VERSION
+  s.version     = Tamaudit::VERSION
   s.authors     = ["Tiago Machado"]
   s.email       = ["tiago@tamworks.com"]
   s.homepage    = "http://github.com/tiagotam/tamaudit"

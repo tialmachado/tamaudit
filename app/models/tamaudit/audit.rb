@@ -1,4 +1,4 @@
-module TamAudit
+module Tamaudit
   class Audit < ActiveRecord::Base
 
     self.table_name = 'audits'

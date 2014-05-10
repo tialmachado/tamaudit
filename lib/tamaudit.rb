@@ -1,7 +1,7 @@
 require "tamaudit/engine"
 require "request_store"
 
-module TamAudit
+module Tamaudit
 
   autoload :Auditor, "tamaudit/auditor"
   autoload :AuditorBehavior, "tamaudit/auditor_behavior"

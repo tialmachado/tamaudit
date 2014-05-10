@@ -1,4 +1,4 @@
-# TamAudit - IN PROGRESS
+# Tamaudit - IN PROGRESS
 
 ## Audits activerecord models like a boss
 
@@ -28,11 +28,11 @@ In console
 
     @post.create(title: "an awesome blog post" )
 
-TamAudit will create an audit by default on creation , edition and destroy:
+Tamaudit will create an audit by default on creation , edition and destroy:
 
     @post.audits.size #=> 1
 
-TamAudit provides options to include or exclude columns to trigger the creation of audit.
+Tamaudit provides options to include or exclude columns to trigger the creation of audit.
 
     class Post < ActiveRecord::Base
       auditable only: [:title] # except: [:some_column]
@@ -46,12 +46,12 @@ And lets you declare the callbacks you want for audit creation:
 
 You can find the audits records easily:
 
-    @post.audits.first #=>  #<TamAudit::Audit id: 1, auditable_id: 1, auditable_type: "Post", user_id: 1, user_type: "User", audited_changes: {"title"=>[nil, "MyString"], "created_at"=>[nil, 2013-10-30 15:50:14 UTC], "updated_at"=>[nil, 2013-10-30 15:50:14 UTC], "id"=>[nil, 1]}
+    @post.audits.first #=>  #<Tamaudit::Audit id: 1, auditable_id: 1, auditable_type: "Post", user_id: 1, user_type: "User", audited_changes: {"title"=>[nil, "MyString"], "created_at"=>[nil, 2013-10-30 15:50:14 UTC], "updated_at"=>[nil, 2013-10-30 15:50:14 UTC], "id"=>[nil, 1]}
 
-TamAudit will save the model changes in a serialized column called audited_changes:
+Tamaudit will save the model changes in a serialized column called audited_changes:
 
     @post.audits.first.audited_changes #=> {"title"=>[nil, "MyString"], "created_at"=>[nil, 2013-10-30 15:50:14 UTC], "updated_at"=>[nil, 2013-10-30 15:50:14 UTC], "id"=>[nil, 1]}
 
-TamAudit will detect the current user when records saved from rails controllers. By default TamAudit uses current_user method but you can change it:
+Tamaudit will detect the current user when records saved from rails controllers. By default Tamaudit uses current_user method but you can change it:
 
-    TamAudit.current_user_method = :authenticated_user
+    Tamaudit.current_user_method = :authenticated_user

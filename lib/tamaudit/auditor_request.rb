@@ -1,4 +1,4 @@
-module TamAudit::AuditorRequest
+module Tamaudit::AuditorRequest
   extend ActiveSupport::Concern
 
   included do 
@@ -6,7 +6,7 @@ module TamAudit::AuditorRequest
   end
 
   def store_audited_user
-    RequestStore.store[:audited_user] = self.send(TamAudit.current_user_method) #current_user
+    RequestStore.store[:audited_user] = self.send(Tamaudit.current_user_method) #current_user
     
     RequestStore.store[:audited_ip]   = self.try(:request).try(:remote_ip)
   end

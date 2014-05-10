@@ -1,6 +1,6 @@
-module TamAudit
+module Tamaudit
   class Engine < ::Rails::Engine
-    isolate_namespace TamAudit
+    isolate_namespace Tamaudit
     
     config.generators do |g|
       g.test_framework  :rspec,
@@ -10,8 +10,8 @@ module TamAudit
     end
 
     initializer "include Auditor request into action controller" do |app|
-      ActionController::Base.send(:include, TamAudit::AuditorRequest)
-      ActiveRecord::Base.send(:include, TamAudit::Auditor)
+      ActionController::Base.send(:include, Tamaudit::AuditorRequest)
+      ActiveRecord::Base.send(:include, Tamaudit::Auditor)
     end
 
 

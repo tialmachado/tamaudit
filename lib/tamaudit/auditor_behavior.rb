@@ -1,4 +1,4 @@
-module TamAudit
+module Tamaudit
   module AuditorBehavior
     extend ActiveSupport::Concern
 
@@ -34,7 +34,7 @@ module TamAudit
           self.excluded_cols = (@@default_excluded) + options[:except]
         end
 
-        has_many :audits, :as => :auditable, :class_name => TamAudit::Audit.name
+        has_many :audits, :as => :auditable, :class_name => Tamaudit::Audit.name
         #attr_accessor :audited_user, :audited_ip
         accepts_nested_attributes_for :audits
 

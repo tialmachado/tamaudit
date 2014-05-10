@@ -1,2 +1,2 @@
-TamAudit::Engine.routes.draw do
+Tamaudit::Engine.routes.draw do
 end

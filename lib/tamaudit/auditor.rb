@@ -1,7 +1,7 @@
-module TamAudit
+module Tamaudit
   module Auditor 
     extend ActiveSupport::Concern
-    include TamAudit::AuditorBehavior
+    include Tamaudit::AuditorBehavior
   end
 end
 
