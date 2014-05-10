@@ -1,7 +1,7 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :tattletale_audit, :class => 'Audit' do
+  factory :tamaudit_audit, :class => 'Audit' do
     auditable nil
     user nil
     audited_changes "MyText"

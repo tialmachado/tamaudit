@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "tattletale/version"
+require "tamaudit/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "tattletale"
-  s.version     = Tattletale::VERSION
+  s.name        = "tamaudit"
+  s.version     = TamAudit::VERSION
   s.authors     = ["Tiago Machado"]
   s.email       = ["tiago@tamworks.com"]
-  s.homepage    = "http://github.com/tiagotam/tattletale"
+  s.homepage    = "http://github.com/tiagotam/tamaudit"
   s.summary     = "Auditable Rails Engine."
   s.description = "Audit activerecord models like a boss"
 

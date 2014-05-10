@@ -13,7 +13,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'shoulda/matchers/integrations/rspec'
 
-require "tattletale"
+require "tamaudit"
 
 
 require 'support/schema'

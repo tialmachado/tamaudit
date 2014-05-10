@@ -1,4 +1,4 @@
-module Tattletale
+module TamAudit
   class Audit < ActiveRecord::Base
 
     self.table_name = 'audits'

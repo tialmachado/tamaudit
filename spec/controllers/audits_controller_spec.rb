@@ -36,7 +36,7 @@ describe AuditsController do
       controller.send(:current_user=, user)
       expect {
         post :audit
-      }.to change( Tattletale::Audit, :count )
+      }.to change( TamAudit::Audit, :count )
 
       assigns(:general_model).audits.last.user.should == user
       assigns(:general_model).audits.last.remote_address.should == "0.0.0.0"

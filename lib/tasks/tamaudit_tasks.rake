@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :tattletale do
+# task :tamaudit do
 #   # Task goes here
 # end

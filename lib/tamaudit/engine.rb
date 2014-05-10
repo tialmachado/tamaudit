@@ -1,6 +1,6 @@
-module Tattletale
+module TamAudit
   class Engine < ::Rails::Engine
-    isolate_namespace Tattletale
+    isolate_namespace TamAudit
     
     config.generators do |g|
       g.test_framework  :rspec,
@@ -10,8 +10,8 @@ module Tattletale
     end
 
     initializer "include Auditor request into action controller" do |app|
-      ActionController::Base.send(:include, Tattletale::AuditorRequest)
-      ActiveRecord::Base.send(:include, Tattletale::Auditor)
+      ActionController::Base.send(:include, TamAudit::AuditorRequest)
+      ActiveRecord::Base.send(:include, TamAudit::Auditor)
     end
 
 

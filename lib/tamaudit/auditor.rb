@@ -1,7 +1,7 @@
-module Tattletale
+module TamAudit
   module Auditor 
     extend ActiveSupport::Concern
-    include Tattletale::AuditorBehavior
+    include TamAudit::AuditorBehavior
   end
 end
 

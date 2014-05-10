@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tattletale (0.0.1)
+    tamaudit (0.0.1)
       rails (>= 4.0)
       request_store
 
@@ -157,4 +157,4 @@ DEPENDENCIES
   rspec-rails
   shoulda-matchers (~> 1.0)
   sqlite3
-  tattletale!
+  tamaudit!

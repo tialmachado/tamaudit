@@ -1,2 +1,2 @@
-Tattletale::Engine.routes.draw do
+TamAudit::Engine.routes.draw do
 end

@@ -12,3 +12,4 @@ config/gemnasium.yml
 
 /.idea/
 /.RUBY_VERSION
+*.DS_Store
